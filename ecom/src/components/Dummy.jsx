@@ -20,13 +20,7 @@ class HelloWorld extends Component {
     }
 
     toogle = () => {
-        this.setState(state =>{
-            if (state.show) {
-                return {show:false}
-            }else{
-                return {show:true}
-            }
-        })
+        this.setState({show: !this.state.show})
     }
 
 
