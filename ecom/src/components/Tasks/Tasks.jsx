@@ -6,14 +6,14 @@ class Tasks extends Component {
 
     state = {
         
-        taskslist : taskslist
+        tasks : taskslist
       }
 
     render() {
         return (
             <div>
 
-                {this.state.taskslist.map( task => <div key={task.id}>
+                {this.state.tasks.map( task => <div key={task.id}>
 
                 <h1>{task.title}</h1>
                 <p>{task.description}</p>
