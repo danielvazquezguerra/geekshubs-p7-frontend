@@ -3,7 +3,7 @@
         "id": 0,
         "title": "Task One",
         "description": "lorem ipsum",
-        "done": false
+        "done": true
     },
     {
         "id": 1,
@@ -15,6 +15,6 @@
         "id": 2,
         "title": "Task Three",
         "description": "lorem ipsum",
-        "done": false
+        "done": true
     }
 ]

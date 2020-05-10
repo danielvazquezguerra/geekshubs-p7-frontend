@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import taskslist from '../../Sample/taskslist.json'
+import './Tasks.scss'
+import Task from './Task'
 
 
 class Tasks extends Component {
@@ -10,17 +12,15 @@ class Tasks extends Component {
       }
 
     render() {
+
         return (
-            <div>
 
-                {this.state.tasks.map( task => <div key={task.id}>
+            <div className="Tasks">
 
-                <h1>{task.title}</h1>
-                <p>{task.description}</p>
-
-                </div>)}
-
+                {this.state.tasks.map( task => <Task task={task} key={task.id} />)}
+                
             </div>
+
         )
     }
 }
