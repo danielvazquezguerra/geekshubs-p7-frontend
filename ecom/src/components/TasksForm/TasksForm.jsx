@@ -1,24 +1,47 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './TasksForm.scss'
 
-const TasksForm = () => {
+class TasksForm extends Component {
 
-    const onSubmit = event => {
-        console.log('Enviando')
-        event.preventDefault() 
+    state = {
+        title: '',
+        description: ''
     }
 
-    const onChange = (event) => {
-        console.log(event.target.value)
+    onSubmit = event => {
+        event.preventDefault()
+        this.props.addTask(this.state.title, this.state.description) 
     }
 
-    return (
-        <form action="" onSubmit={onSubmit} className="form">
-            <input type="text" placeholder="Write a task" onChange={onChange}/>
-            <textarea placeholder="Escribe una descripcion" onChange={onChange}></textarea>
-            <button type="submit">ENVIAR</button>
-        </form>
-    )
+
+    onChange = event => {
+        this.setState({
+            [event.target.name] : event.target.value
+        })
+
+        }
+
+
+    render() {
+        
+        return (
+                
+            <form className="form" onSubmit={this.onSubmit}>
+
+                <input type="text" name="title" placeholder="Escribe una tarea" 
+                onChange={this.onChange} value={this.state.title}/>
+
+                <textarea name="description" placeholder="Escribe una descripcion de la tarea"
+                onChange={this.onChange} value={this.state.description} />
+                <input type="submit" />
+
+
+            </form>
+
+
+          
+        )
+    }
 }
 
 export default TasksForm;
