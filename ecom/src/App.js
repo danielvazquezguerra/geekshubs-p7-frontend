@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Dummy from './components/Dummy';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
+import Products from './Containers/Products/Products';
+import Filter from './components/Filters/Filter';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Dummy name='Daniel' surname='Vazquez'/>
-      </header>
+      <Filter />
+      <BrowserRouter>
+        <Header />
+        <Switch>
+           <Route path="/product/" component={ Products } exact/>
+        </Switch>
+        <Footer />
+      </BrowserRouter>
+    
     </div>
   );
 }

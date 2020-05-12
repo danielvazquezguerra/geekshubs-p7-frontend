@@ -1,0 +1,31 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    border: 1px solid blue;
+}
+
+.Logo {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.NavButtons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+}
+
+.Login {
+    display: flex;
+    width: 30%;
+    height: 100%;
+    border: 1px solid black;
+}
+
