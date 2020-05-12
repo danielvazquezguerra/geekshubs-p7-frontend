@@ -1,16 +1,18 @@
 import React from 'react'
+import './Home.scss';
 
 
 const Home = () => {
     return (
         <div className="Home">
 
-            <div className="main-left">
+            <div className="MainLeft">
 
-                <img className="PhotoHome" src="../../assets/images/danny-leon-04.png" alt="danny-leon"/>
+                <img className="PhotoHome" srcSet="./danny-leon-04.png" alt="danny-leon"/>
 
             </div>
-            <div className="main-right">
+
+            <div className="MainRight">
 
 
             </div>
