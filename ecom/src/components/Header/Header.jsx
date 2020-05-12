@@ -1,18 +1,4 @@
 import React from 'react'
-<<<<<<< HEAD
-import './Header.scss'
-
-const Header = (props) => {
-
-    return (
-        <div className="Header">
-               
-        </div>
-    )
-}
-
-export default Header
-=======
 import { NavLink } from 'react-router-dom';
 import './Header.scss'
 
@@ -43,4 +29,3 @@ const Header = () => {
 }
 
 export default Header;
->>>>>>> dev

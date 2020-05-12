@@ -3,8 +3,8 @@ import './Filter.scss'
 
 const Filter = () => {
     return (
-        <div className="Background">
-            <div className="Filter">
+        <div className="Filter">
+            <div className="Background">
                 
             </div>
             

@@ -1,16 +1,4 @@
 .App {
-<<<<<<< HEAD
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  width: 100vw;
-  height: 100vh;
-  
-}
-
-
-=======
 
   display: flex;
   flex-direction: column;
@@ -29,7 +17,6 @@
   display: flex;
   width: 100%;
   height: 200PX;
-  border: 3px solid green;
+  background-color: aqua;
 }
->>>>>>> dev
 

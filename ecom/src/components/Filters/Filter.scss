@@ -1,18 +1,22 @@
+@import '../../Colors.scss';
+
 .Filter {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgb(68, 68, 68);
-    mix-blend-mode: multiply;
-    z-index: -1;
+    background-color: $skobeloff;
+    z-index: -2;
 }
 
 .Background {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -2;
+    z-index: -1;
     background-image: url('../../assets/images/skateboarding-boy-01.jpg');
     background-size: cover;
+    filter: grayscale(100%);
+    mix-blend-mode: darken;
+   
 
 }
