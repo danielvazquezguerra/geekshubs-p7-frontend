@@ -1,44 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import Tasks from './components/Tasks/Tasks';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Header from './components/Header/Header';
-import TasksForm from './components/TasksForm/TasksForm';
-import Taskslist from './Sample/taskslist.json'
+import Footer from './components/Footer/Footer';
+
+import Products from './Containers/Products/Products';
+import Filter from './components/Filters/Filter';
 
 
 
-class App extends Component {
-
-  state = {
-    tasks: Taskslist
-  }
-
-  addTask = (title, description) => {
-    const newTask = {
-      title: title,
-      description: description,
-      id: this.state.tasks.length + 1
-    }
-    console.log(newTask)
-
-    this.setState({
-      tasks: [...this.state.tasks, newTask]
-    })
-
-  }
-
-  render() {
+function App() {
+  return (
+    <div className="App">
+      <Filter />
+      <BrowserRouter>
+        <Header />
+        <Switch>
+           <Route path="/product/" component={ Products } exact/>
+        </Switch>
+        <Footer />
+      </BrowserRouter>
     
-    return (
-      <div className="App"> 
-          <Header /> 
-          <TasksForm addTask={this.addTask}/>
-          <Tasks tasks={this.state.tasks} />
-      </div>
-    )
-  }
-
-
+    </div>
+  );
 }
 
 export default App;
