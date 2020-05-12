@@ -1,22 +1,23 @@
 @import '../../Colors.scss';
 
 .Filter {
-    position: absolute;
+   
     width: 100%;
     height: 100%;
     background-color: $skobeloff;
+    background-size: cover;
     z-index: -2;
+   
 }
 
 .Background {
-    position: absolute;
+    
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url('../../assets/images/skateboarding-boy-01.jpg');
+    // background-image: url('../../assets/images/skateboarding-boy-01.jpg');
     background-size: cover;
     filter: grayscale(100%);
     mix-blend-mode: darken;
-   
-
+  
 }
