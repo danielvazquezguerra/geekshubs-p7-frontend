@@ -4,10 +4,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 10%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    opacity: 0.8;
 }
 
 .Logo {
@@ -23,12 +24,14 @@
     align-items: center;
     width: 30%;
     height: 100%;
+    z-index: 3;
+    border-bottom: 2px solid $interorange;
 
     
     a {
         all: unset;
         font-size: 0.8em;
-        color: $champagne;
+        color: $crayola;
         font-family: 'Arvo', serif;
         padding-left: 1em;
         letter-spacing: 2px;
@@ -43,7 +46,6 @@
     align-items: center;
     width: 40%;
     height: 100%;
-    border-left: 4px solid $interorange;
 
     a {
         all: unset;

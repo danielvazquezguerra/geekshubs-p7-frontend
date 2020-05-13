@@ -10,7 +10,7 @@
 
 .PhotoHome {
     position: relative;
-    left: 150px;
+    left: 100px;
     top: -40px;
     width: auto;
     height: 120%;
@@ -20,8 +20,8 @@
 
 .PhotoHome2 {
     position: relative;
-    left: -255px;
-    top: -40px;
+    left: -260px;
+    top: -30px;
     width: auto;
     height: 120%;
     object-fit: contain;
@@ -29,24 +29,114 @@
     mix-blend-mode: multiply;
 }
 
+.Skateboard {
+    position: absolute;
+    right: 0px;
+    top: 20%;
+    height: 60%;
+    object-fit: contain;
+    z-index: -1;
+    // mix-blend-mode: multiply;
+    overflow: hidden;
+    
+}
+
+.SkateBoard2 {
+    position: relative;
+    z-index: 6;
+    width: 35%;
+    top: 5%;
+
+}
+
 
 .MainLeft {
     display: flex;
     width: 50%;
     height: 100%;
+    // border: 1px solid black;
+
 }
 
 .MainRight {
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
     width: 50%;
     height: 100%;
+    // border: 1px solid black;
+}
+
+.InterView {
+    font-family: 'Roboto';
+    top: 100px;
+    left: 500px;
+    position: absolute;
+    width: 20%;
+    color: $crayola;
+    font-size: 0.6em;
+    font-weight: 200;
+    letter-spacing: 2px;
+    line-height: 1.7em;
+    margin: 20px;
+    z-index: 3;
 }
 
 .RedCaption {
     position: absolute;
+    left: 0px;
     top: 50%;
     width: 40%;
     height: 20%;
     background-color: $interorange;
     z-index: -2;
+}
+
+.NameCaption {
+    position: absolute;
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    top: 20%;
+    left: 80px;
+    width: 20%;
+    height: 5%;
+    background-color: $crayola;
+    z-index: -2;
+    line-height: 2px;
+
+    p {
+        font-size: 0.5em;
+        font-family: 'Arvo';
+        color: $champagne;
+        font-weight: 100;
+        letter-spacing: 0.4em;
+    }
+}
+
+.DescriptionHome {
+
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5em;
+    padding: 10px 30px;
+    letter-spacing: 0.4em;
+    font-family: 'Arvo', serif;
+    color: $crayola;
+    width: 40%;
+    line-height: 2em;
+    font-weight: 700;
+    justify-content: center;
+    z-index: 2;
+
+    span {
+        color: $crayola;
+        width: 50%;
+        font-size: 4em;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1em;
+        padding-bottom: 10px;
+    }
 }

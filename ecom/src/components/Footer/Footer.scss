@@ -1,8 +1,23 @@
+@import '../../Colors.scss';
+
 .Footer {
     display: flex;
     width: 100%;
-    height: 10%;
+    height: 100%;
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
+
+}
+
+.FooterLeft {
+    display: flex;
+    width: 60%;
+    height: 100%;
+} 
+
+.FooterRight {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    background-color: $liver;
 }

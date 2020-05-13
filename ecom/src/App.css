@@ -14,19 +14,25 @@
 .Switch {
   display: flex;
   width: 100%;
-  height: 80%;
+  height: 88%;
 
 }
 
 .Footer {
   display: flex;
   width: 100%;
-  height: 10%;
+  height: 2%;
 }
 
 .Filter {
   position: absolute;
   background-size: cover;
+}
+
+.Header {
+  display: flex;
+  width: 100%;
+  height: 10%;
 }
 
 

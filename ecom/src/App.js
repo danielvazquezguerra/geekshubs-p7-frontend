@@ -15,15 +15,19 @@ function App() {
       <Filter className="Filter"/>
       <BrowserRouter>
         <Header className="Header"/>
-          <main className="Switch">
             <Switch>
+          <main className="Switch">
 
                 <Route path="/" component={ Home } exact/>
                 <Route path="/product/" component={ Products } exact/>
 
-            </Switch>
           </main>
-        <Footer className="Footer"/>
+            </Switch>
+          <section className="Footer">
+
+        <Footer />
+
+          </section>
       </BrowserRouter>
     
     </div>
