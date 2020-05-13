@@ -8,7 +8,7 @@ const Home = () => {
 
             <div className="MainLeft">
 
-                <img className="PhotoHome" srcSet="./danny-leon-04.png" alt="danny-leon"/>
+                <img className="PhotoHome" src='images/danny-leon-04.png'  alt="danny-leon"/>
 
             </div>
 
