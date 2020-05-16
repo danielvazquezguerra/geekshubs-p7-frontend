@@ -19,15 +19,13 @@ function App() {
           <main className="Switch">
 
                 <Route path="/" component={ Home } exact/>
-                <Route path="/product/" component={ Products } exact/>
+                <Route path="/products/" component={ Products } exact/>
 
           </main>
             </Switch>
-          <section className="Footer">
+    
+        <Footer className="Footer"/>
 
-        <Footer />
-
-          </section>
       </BrowserRouter>
     
     </div>

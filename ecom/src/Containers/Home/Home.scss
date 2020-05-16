@@ -69,14 +69,14 @@
 }
 
 .InterView {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     top: 100px;
-    left: 500px;
+    left: 550px;
     position: absolute;
     width: 20%;
     color: $crayola;
-    font-size: 0.6em;
-    font-weight: 200;
+    font-size: 0.8em;
+    font-weight: 500;
     letter-spacing: 2px;
     line-height: 1.7em;
     margin: 20px;
@@ -119,9 +119,9 @@
 
     display: flex;
     flex-direction: column;
-    font-size: 0.5em;
+    font-size: 0.6em;
     padding: 10px 30px;
-    letter-spacing: 0.4em;
+    letter-spacing: 0.3em;
     font-family: 'Arvo', serif;
     color: $crayola;
     width: 40%;
