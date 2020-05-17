@@ -9,13 +9,20 @@
     display: flex;
     width: 100%;
     height: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: 1px solid white;
 }
 
-.TitleProducts {
-    font-family: 'Fredoka One', cursive;
-    font-size: 2em;
-    color: $champagne;
+.ProductsLeft {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    border-right: 2px dashed $crayola;
+
+}
+
+.ProductsRight {
+  
+    width: 70%;
+    height: 100%;
+
 }

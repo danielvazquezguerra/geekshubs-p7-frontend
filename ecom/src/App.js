@@ -7,6 +7,7 @@ import Login from './Containers/Login/Login';
 import Home from './Containers/Home/Home';
 import Products from './Containers/Products/Products';
 import Filter from './components/Filters/Filter';
+import Register from './Containers/Register/Register';
 
 
 
@@ -22,6 +23,8 @@ function App() {
                 <Route path="/" component={ Home } exact/>
                 <Route path="/products/" component={ Products } exact/>
                 <Route path="/login/" component={ Login } exact />
+                <Route path="/Register/" component={ Register } exact />
+
           </main>
             </Switch>
     
