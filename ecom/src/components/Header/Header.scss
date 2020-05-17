@@ -30,7 +30,18 @@
     
     a {
         all: unset;
-        font-size: 0.8em;
+        font-size: 0.9em;
+        color: $crayola;
+        font-family: 'Arvo', serif;
+        padding-left: 1em;
+        letter-spacing: 2px;
+        font-weight: 700;
+        cursor: pointer;
+    } 
+
+    a:hover {
+        all: unset;
+        font-size: 1.3em;
         color: $crayola;
         font-family: 'Arvo', serif;
         padding-left: 1em;
@@ -40,25 +51,6 @@
     } 
 }
 
-.LoginUser {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: 40%;
-    height: 100%;
-
-    a {
-        all: unset;
-        font-size: 0.8em;
-        color: $champagne;
-        font-family: 'Arvo', serif;
-        letter-spacing: 2px;
-        font-weight: 700;
-        padding-right: 20px;
-        cursor: pointer;
-    } 
-    
-}
 
 .LoginGuest {
     display: flex;
@@ -69,7 +61,18 @@
 
     a {
         all: unset;
-        font-size: 0.8em;
+        font-size: 0.9em;
+        color: $champagne;
+        font-family: 'Arvo', serif;
+        letter-spacing: 2px;
+        font-weight: 700;
+        padding-right: 20px;
+        cursor: pointer;
+    } 
+
+    a:hover {
+        all: unset;
+        font-size: 1em;
         color: $champagne;
         font-family: 'Arvo', serif;
         letter-spacing: 2px;

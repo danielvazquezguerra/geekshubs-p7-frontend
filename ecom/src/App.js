@@ -25,7 +25,7 @@ function App() {
                 <Route path="/products/" component={ Products } exact/>
                 <Route path="/login/" component={ Login } exact />
                 <Route path="/Register/" component={ Register } exact />
-                <Route path="/products/details/" component={ ProductsDetails } />
+                <Route path="/skateboards/" component={ ProductsDetails } />
 
           </main>
             </Switch>

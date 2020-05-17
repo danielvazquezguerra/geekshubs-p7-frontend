@@ -12,7 +12,17 @@ export const getProducts = () => {
 
 }
 
-export const clearCart = () => {
+export const getProductById = (_id) => {
+    return  axios.get(API_URL + '/skateboards/' + _id)
+    .then(res => store.dispatch({
+        type:'GET_BY_ID',
+    payload: res.data
+    }))
+
+}
+
+
+export const clearCart = () => {    
     store.dispatch({
         type: 'CLEAR_CART',
         payload: []

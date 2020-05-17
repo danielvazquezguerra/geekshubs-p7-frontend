@@ -24,7 +24,7 @@ const Header = ( props ) => {
             { props.user ?
             
                 <div className="LoginGuest">
-                <p className="UserName">Happy Rollin`{props.user.username}</p>    
+                <p className="UserName">Happy Rollin` {props.user.username}</p>    
                 <NavLink to='/login' onClick={logout} exact>Logout</NavLink>
                 <NavLink to='/shop' exact><i className="fas fa-shopping-cart"></i></NavLink>
 
@@ -32,7 +32,7 @@ const Header = ( props ) => {
 
                 :
 
-                <div className="LoginUser">
+                <div className="LoginGuest">
                     <NavLink to='/login' exact>Login</NavLink>
                     <NavLink to='/Register' exact>Register</NavLink>
                     
