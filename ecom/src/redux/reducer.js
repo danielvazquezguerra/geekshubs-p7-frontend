@@ -7,18 +7,42 @@ const reducer = (state= initialState, action) => {
     console.log('Esta es la action', action);
     
     switch (action.type) {
-        case 'ADD_TODO':
+        case 'LOGIN':
 
         return {
             ...state,
-            todos: [
-                ...state.todos, 
-                {
-                    text: action.payload, 
-                    completed: false,
-                }
-            ]
-        };
+           user: action.payload
+            
+        }
+        case 'LOGOUT': 
+
+        return {
+            ...state,
+            user: undefined
+        }
+        case 'ADD_CART':
+            return {
+                ...state,
+                cart: [...state.cart, action.payload]
+            }
+        case 'CLEAR_CART':
+            return {
+                ...state,
+                cart: []
+            }
+        case 'GET_ALL_PRODUCTS':
+            return {
+                ...state,
+                products: action.payload
+            }
+
+        case 'SEARCH':
+            return {
+                 ...state,
+                  search: action.payload
+             }
+    
+        ;
 
     default: 
         return state;

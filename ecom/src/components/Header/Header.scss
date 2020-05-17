@@ -60,3 +60,37 @@
     
 }
 
+.LoginGuest {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+
+    a {
+        all: unset;
+        font-size: 0.8em;
+        color: $champagne;
+        font-family: 'Arvo', serif;
+        letter-spacing: 2px;
+        font-weight: 700;
+        padding-right: 20px;
+        cursor: pointer;
+    } 
+    
+}
+
+.UserName {
+    color: $crayola;
+    font-family: 'Arvo', sans-serif;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin: 0px;
+    margin-right: 1em;
+}
+
+.fas {
+    color: $liver;
+    font-size: 2.6em;
+}
+

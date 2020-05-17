@@ -1,16 +1,20 @@
 import React from 'react'
 import './CardSkate.scss'
 
-const CardSkate = () => {
+
+
+const CardSkate = ({ product }) => {
+
+    
 
     return (
         <div className="CardSkate">
 
-            <img className="SkateImg" src="" alt="" />
+            <img className="SkateImg" src={product.image_path[0]} alt="" />
 
             <div className="SkateInfo">
-                <h5>Skateboard 22"</h5>
-                <p>122.5€</p>
+                <h5>{product.name}</h5>
+                <p>{product.price}</p>
 
             </div>
 

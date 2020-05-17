@@ -1,9 +1,8 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { logout } from '../../redux/actions/actions'
 import './Header.scss'
-
-
 
 const Header = ( props ) => {
 
@@ -24,19 +23,23 @@ const Header = ( props ) => {
             </div>
             { props.user ?
             
-                <div className="LoginUser">
-                    <NavLink to='/login' exact>Login</NavLink>
-                    <NavLink to='/Register' exact>Register</NavLink>
+                <div className="LoginGuest">
+                <p className="UserName">Happy Rollin`{props.user.username}</p>    
+                <NavLink to='/login' onClick={logout} exact>Logout</NavLink>
+                <NavLink to='/shop' exact><i className="fas fa-shopping-cart"></i></NavLink>
 
-                </div>
+            </div>
 
                 :
 
                 <div className="LoginUser">
-                <NavLink to='/login' exact>Logout</NavLink>
-                <NavLink to='/Register' exact>Register</NavLink>
+                    <NavLink to='/login' exact>Login</NavLink>
+                    <NavLink to='/Register' exact>Register</NavLink>
+                    
 
-            </div>
+                </div>
+
+
 
         }
             
@@ -46,5 +49,4 @@ const Header = ( props ) => {
 }
 
 const mapStateToProps = (state) => ({user: state.user})
-
 export default connect(mapStateToProps)(Header);

@@ -4,6 +4,13 @@
 
     display: flex;
     overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    form {
+        width: 30%;
+    }
+
 }
 
 .LoginWrapper {
@@ -21,61 +28,42 @@
     align-items: center;
     width: 100%;
     height: 80%;
+
 }
 
 .FormLogin {
-    font-family: 'Roboto', sans-serif;
-    font-size: 0.8em;
+
     display: flex;
-    flex-direction: column;
-    width: 19%;
-    height: auto;
-    button {
-        width: 40%;
-        font-size: 0.9em;
-        height: 30px;
-        margin-top: 10px;
-        border-radius: 0px;
-        background-color: $liver;
-        border: 0px;
-        
+    width: 50%;
+    color: black;
+    font-weight: 900;
+
+
+    .ant-form {
+        width: 60%;
     }
-}
 
-.BackLogin {
-    position: absolute;
-    left: 15%;
-    top: 19%;
-    width: 70%;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: 600px;
-    filter: grayscale(100);
-    mix-blend-mode: multiply;
-    z-index: -2;
-}
-
-.form-control {
-    height: 20px;
-} 
-
-.form-group {
-    color: white;
-    font-size: 0.8em;
-    margin: 0px;
-    padding: 0px;
     input {
-        border-radius: 0px;
-        background-color: transparent;
         border: 0px;
-        border-bottom: 1px solid white;
-        margin-bottom: 10px;
+        border-bottom: 2px solid $crayola;
+        background-color: transparent;
     }
 
+    .ant-input-password {
+        border: 0px;
+        border-bottom: 2px solid $crayola;
+        background-color: transparent;
+    }
+
+    input:hover {
+        border-bottom: 2px solid $champagne;
+    }
+    
     label {
-        letter-spacing: 2px;
+        color: $crayola;
+        text-align: right;
     }
-
+    
 }
 
 .FootLogin {
@@ -114,3 +102,4 @@
         width: 50%;
     }
 }
+

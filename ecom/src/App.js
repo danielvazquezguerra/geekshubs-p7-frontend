@@ -8,6 +8,7 @@ import Home from './Containers/Home/Home';
 import Products from './Containers/Products/Products';
 import Filter from './components/Filters/Filter';
 import Register from './Containers/Register/Register';
+import ProductsDetails from './Containers/Products/ProductsDetails/ProductsDetails';
 
 
 
@@ -24,6 +25,7 @@ function App() {
                 <Route path="/products/" component={ Products } exact/>
                 <Route path="/login/" component={ Login } exact />
                 <Route path="/Register/" component={ Register } exact />
+                <Route path="/products/details/" component={ ProductsDetails } />
 
           </main>
             </Switch>
