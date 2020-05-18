@@ -1,68 +1,110 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GH-Proyecto1-Netflix-Frontend 🎞
 
-## Available Scripts
+FrontEnd del primer proyecto del Bootcamp FullStack de GeeksHubs de una web de alquiler de peliculas.
 
-In the project directory, you can run:
+## Table of Content
 
-### `npm start`
+- [Built With](##-Built-With)
+- [Knowledge](##-Knowledge)
+- [Getting Started](##-Getting-Started)
+- [Partes](##-Partes)
+- [Documentation](##-Documentation)
+- [Author](##-Author)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Built With 🛠️
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+## Knowledge 🧠 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* React
+* Typescript
 
-### `npm run build`
+## Getting Started 🚀 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Clonando repositorio
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```js
+git clone https://github.com/danielvazquezguerra/geekshubs-frontend-p7.git
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Instalación dependencias
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+REACT
+ANT DESIGN
+BOOTSTRAP
+NODE
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Comenzando proyecto con Redux
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Configuración react-redux
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install -g @angular/cli
+ng new app
+cd app
+ng serve
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Arrancar el servidor
 
-### Code Splitting
+Para arrancar el servidor tienes que introducir el comando:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
+npm start
+```
+### Components
+HOME
+LOGIN
+REGISTER
+PRODUCTS
+SHOPPING CART
 
-### Analyzing the Bundle Size
+#### Actions for Redux
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+    export  const  getProducts  = () => {
+    return  axios.get(API_URL  +  '/skateboards/all')
+    .then(res  =>  store.dispatch({
+    type:'GET_ALL_PRODUCTS',
+    payload: res.data
+    }))
+    }
+    export  const  getProductById  = (_id) => {
+    return  axios.get(API_URL  +  '/skateboards/'  +  _id)
+    .then(res  =>  store.dispatch({
+    type:'GET_BY_ID',
+    payload: res.data
+    }))
 
-### Making a Progressive Web App
+    }
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Documentation 📚 
 
-### Deployment
+- [React Documentation][https://es.reactjs.org/](https://es.reactjs.org/)
+- [Redux]([https://es.redux.js.org/](https://es.redux.js.org/)
+- [Ant Design](https://ng.ant.design/docs/introduce/en)
+- [Bootstrap](https://ng-bootstrap.github.io/#/getting-started)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-### `npm run build` fails to minify
+## Author 👨🏼‍💻 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+* **Daniel Vazquez Guerra** - [danielvazquezguerra](https://github.com/danielvazquezguerra)
+
+
+
+## Images
+
+### Home
+
+![HOME](https://github.com/danielvazquezguerra/geekshubs-p7-frontend/blob/feature/bonesPage/ecom/public/images/screenshot-01.jpg?raw=true)
+
+
+### Movies
+![PRODUCTS](https://github.com/danielvazquezguerra/geekshubs-p7-frontend/blob/feature/bonesPage/ecom/public/images/screenshot-02.jpg?raw=true)
+
+### Details
+![LOGIN](https://github.com/danielvazquezguerra/geekshubs-p7-frontend/blob/feature/bonesPage/ecom/public/images/screenshot-03.jpg?raw=true)
+
+
